@@ -36,6 +36,7 @@ int main() {
     std::getline(std::cin, name); // Считываем введенное пользователем имя
 
     std::string insertSQL = "INSERT INTO MyTable (id, name) VALUES (" + std::to_string(id) + ", '" + name + "');"; // Создаем SQL запрос для вставки данных
+    // std::string insertSQL = "INSERT INTO MyTable (id) VALUES (" + std::to_string(id) + " );"; // Создаем SQL запрос для вставки данных
 
     exitCode = sqlite3_exec(db, insertSQL.c_str(), nullptr, 0, &errorMessage); // Выполняем SQL запрос для вставки данных и сохраняем результат в exitCode
 
