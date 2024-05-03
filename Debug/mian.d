@@ -1,0 +1,1 @@
+mian.o: ../mian.cpp
