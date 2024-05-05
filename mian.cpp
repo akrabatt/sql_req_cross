@@ -18,7 +18,7 @@ int main()
     }
     else
     {
-        std::cout << "Database opened successfully\n"; // Выводим сообщение об успешном открытии базы данных
+        std::cout << "Database opened successfully!\n"; // Выводим сообщение об успешном открытии базы данных
     }
 
 
